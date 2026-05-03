@@ -12,14 +12,14 @@
             <header>
             <nav>
                 <h1>Todo List</h1>
-                <button>Add Task</button>
+                <button id="todo-button">Add Task</button>
             </nav>
             </header>
             <div id="container">
             <div class="sidebar">
                 <div class ="sidebar-header">
                     <h1>Projects</h1>
-                    <button>+</button>
+                    <button id="project-button">+</button>
                 </div>
                 <div class="sidebar-content">
                     <div>
@@ -36,5 +36,66 @@
                 <h1>Tasks</h1>
             </div>
         </div>
+        <dialog id="project-dialog">
+                    <form id="project-form">
+                        <h1>Create Project</h1>
+                        <div>
+                            <label for="">Title :</label>
+                            <input type="text" id="project-title" placeholder="Title">
+                        </div>
+                        <div>
+                            <label for="">Description :</label>
+                            <input type="text" id="project-description" placeholder="Description">
+                        </div>
+                       <div>
+                            <label for="">Due Date :</label>
+                        <input type="date" id="project-due-date">
+                       </div>
+                        <div>
+                            <label for="">Priority :</label>
+                        <select id="project-priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                        </div>
+                        <div>
+                            <button type="submit">Create</button>
+                            <button type="button" id="cancel-btn">Cancel</button>
+                        </div>
+                        
+                    </form>
+                </dialog>
+
+                <dialog id="todo-dialog">
+                    <form id="todo-form">
+                        <h1>Create Task</h1>
+                        <div>
+                            <label for="">Title :</label>
+                            <input type="text" id="todo-title" placeholder="Title">
+                        </div>
+                        <div>
+                            <label for="">Description :</label>
+                            <input type="text" id="todo-description" placeholder="Description">
+                        </div>
+                       <div>
+                            <label for="">Due Date :</label>
+                        <input type="date" id="todo-due-date">
+                       </div>
+                        <div>
+                            <label for="">Priority :</label>
+                        <select id="todo-priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                        </div>
+                        <div>
+                            <button type="submit">Create</button>
+                            <button type="button" id="cancel-todo-btn">Cancel</button>
+                        </div>
+                        
+                    </form>
+                </dialog>
     </body>
     </html>

@@ -1,6 +1,6 @@
-const todoItems = [];
+const projects = [];
 
-export class TodoItem {
+export class Project {
     constructor(title, description, dueDate, priority) {
         this.title = title;
         this.description = description;
@@ -8,3 +8,8 @@ export class TodoItem {
         this.priority = priority;
     }
 }
+
+export const addProject = (project) => {
+    projects.push(project);
+}
+
