@@ -22,18 +22,12 @@
                     <button id="project-button">+</button>
                 </div>
                 <div class="sidebar-content">
-                    <div>
-                        <h3>Personal</h3>
-                        <button>Del</button>
-                    </div>
-                    <div>
-                        <h3>Work</h3>
-                        <button>Del</button>
-                    </div>
+                   
                 </div>
             </div>
             <div id="main-content">
                 <h1>Tasks</h1>
+                 <div id="task-list"></div>
             </div>
         </div>
         <dialog id="project-dialog">
@@ -44,26 +38,9 @@
                             <input type="text" id="project-title" placeholder="Title">
                         </div>
                         <div>
-                            <label for="">Description :</label>
-                            <input type="text" id="project-description" placeholder="Description">
-                        </div>
-                       <div>
-                            <label for="">Due Date :</label>
-                        <input type="date" id="project-due-date">
-                       </div>
-                        <div>
-                            <label for="">Priority :</label>
-                        <select id="project-priority">
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                        </div>
-                        <div>
                             <button type="submit">Create</button>
                             <button type="button" id="cancel-btn">Cancel</button>
                         </div>
-                        
                     </form>
                 </dialog>
 

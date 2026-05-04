@@ -1,13 +1,11 @@
-const projects = [];
+export const projects = [];
 
 export class Project {
-    constructor(title, description, dueDate, priority) {
+    constructor(title, todos = []) {
         this.title = title;
-        this.description = description;
-        this.dueDate = dueDate;
-        this.priority = priority;
+        this.todos = todos;
     }
-}
+}   
 
 export const addProject = (project) => {
     projects.push(project);

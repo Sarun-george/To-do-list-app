@@ -1,4 +1,4 @@
-const todoItems = [];
+
 
 export class TodoItem {
     constructor(title, description, dueDate, priority) {
@@ -8,3 +8,4 @@ export class TodoItem {
         this.priority = priority;
     }
 }
+
